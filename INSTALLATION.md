@@ -8,7 +8,7 @@ This file explains common installation steps. Choose the instructions for the en
    ```bash
    python -m venv venv
    source venv/bin/activate   # macOS / Linux
-   venv\Scripts\activate    # Windows (PowerShell)
+   venv\Scripts\Activate.ps1    # Windows (PowerShell)
    ```
 3. Install dependencies (example):
    ```bash
