@@ -7,8 +7,9 @@ This file explains common installation steps. Choose the instructions for the en
 2. Create and activate a virtual environment:
    ```bash
    python -m venv venv
-   source venv/bin/activate   # macOS / Linux
-   venv\Scripts\activate    # Windows (PowerShell)
+   source venv/bin/activate      # macOS / Linux
+   venv\Scripts\activate.bat     # Windows (cmd)
+   venv\Scripts\Activate.ps1     # Windows (PowerShell)
    ```
 3. Install dependencies (example):
    ```bash
