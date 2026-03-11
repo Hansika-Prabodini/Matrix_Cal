@@ -23,7 +23,19 @@ For A = [[1,2],[3,4]], inverse = (-1/2)*[[4,-2],[-3,1]] = [[-2,1],[1.5,-0.5]]
 
 ## Example 5 — Row reduction to solve Ax = b
 A = [[2,1],[1,1]], b = [3,2]
-Solve using row reduction or inverse as shown in `USAGE.md`.
+
+We solve using matrix inverse: x = A^(-1) * b
+
+Step 1: Calculate det(A) = 2*1 - 1*1 = 1
+Step 2: Calculate A^(-1) using formula (1/det)*[[d,-b],[-c,a]]
+        A^(-1) = (1/1)*[[1,-1],[-1,2]] = [[1,-1],[-1,2]]
+Step 3: Multiply x = A^(-1) * b
+        x = [[1,-1],[-1,2]] * [[3],[2]]
+          = [[1*3 + (-1)*2], [(-1)*3 + 2*2]]
+          = [[1], [1]]
+
+Solution: x = 1, y = 1
+Verify: A*x = [[2,1],[1,1]]*[[1],[1]] = [[3],[2]] = b ✓
 
 ## Tip
 Include unit tests for these examples to ensure the implementation matches the documentation.
